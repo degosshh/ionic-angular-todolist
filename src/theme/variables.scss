@@ -2,7 +2,6 @@
 // https://ionicframework.com/docs/theming/
 
 :root {
-  /* Colors */
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
@@ -24,8 +23,28 @@
   --ion-color-tertiary-shade: #4854e0;
   --ion-color-tertiary-tint: #6370ff;
 
+  --ion-color-blue: #023e8a;
+  --ion-color-blue-rgb: 2, 62, 138;
+  --ion-color-blue-contrast: #ffffff;
+  --ion-color-blue-contrast-rgb: 255, 255, 255;
+  --ion-color-blue-shade: #023779;
+  --ion-color-blue-tint: #1b5196;
+
+  .ion-color-blue {
+    --ion-color-base: var(--ion-color-blue);
+    --ion-color-base-rgb: var(--ion-color-blue-rgb);
+    --ion-color-contrast: var(--ion-color-blue-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-blue-contrast-rgb);
+    --ion-color-shade: var(--ion-color-blue-shade);
+    --ion-color-tint: var(--ion-color-blue-tint);
+  }
+
   * {
     font-family: "Ubuntu", sans-serif !important;
+  }
+
+  ion-toolbar {
+    --min-height: 100px;
   }
 
 }
