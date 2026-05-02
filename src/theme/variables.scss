@@ -47,6 +47,23 @@
     --min-height: 100px;
   }
 
+  ion-input,
+  ion-textarea,
+  ion-select {
+    --highlight-color-focused: var(--ion-color-blue);
+    --highlight-color-valid: var(--ion-color-blue);
+    --border-radius: 10px !important;
+  }
+
+  ion-header,
+  ion-footer {
+    box-shadow: none;
+  }
+
+  ion-button {
+    --box-shadow: none;
+  }
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -72,6 +89,5 @@
     --ion-color-tertiary-contrast-rgb: 255, 255, 255;
     --ion-color-tertiary-shade: #5660e0;
     --ion-color-tertiary-tint: #737fff;
-
   }
 }
